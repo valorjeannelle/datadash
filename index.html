@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DataDash - Dashboard Météo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1> DataDash</h1>
+        <p>Votre météo à portée de main</p>
+    </header>
+
+
+    <main>
+
+
+        <section id="recherche">
+
+            <h2>Rechercher une ville</h2>
+            <p id="message-erreur"></p>
+
+      <div id="form-recherche">
+
+                <input type="text" id="entree" placeholder="Tapez le nom de la ville ici" required>
+
+                <button id="rechercher">
+                    Voir
+                </button>
+
+        </div> 
+
+        </section>
+
+
+        <section id="historique">
+
+            <h2>Historique</h2>
+
+            <div id="historique-villes">
+
+            </div>
+
+        </section>
+
+
+        <section id="meteo-actuelle">
+
+            <h2>Météo actuelle</h2>
+
+            <h3 id="ville"></h3>
+
+            <img id="icone-meteo" src="images/meteo.png" alt="Icône météo">
+
+            <p id="temperature"></p>
+
+            <p id="description"></p>
+
+            <div id="info-meteo">
+
+                <p>
+
+                    <span id="humidite"></span>
+                </p>
+
+                <p>
+
+                    <span id="vent"></span>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section id="prevision">
+
+            <h2>Prévisions météo</h2>
+
+            <div id="cartes-previsions">
+        
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; DataDash,Votre météo à portée de main</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
